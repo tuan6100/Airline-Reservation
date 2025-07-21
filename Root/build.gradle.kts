@@ -36,6 +36,7 @@ subprojects {
 		add("implementation", "org.springframework.boot:spring-boot-starter-actuator")
 		add("implementation", "org.springframework.boot:spring-boot-starter-data-jpa")
 		add("implementation", "org.springframework:spring-aop")
+		add("implementation", "org.axonframework:axon-spring-boot-starter:4.11.2")
 		add("implementation", "me.paulschwarz:spring-dotenv:4.0.0")
 		add("implementation", "com.fasterxml.uuid:java-uuid-generator:5.1.0")
 		add("implementation", "org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.9")
@@ -51,6 +52,4 @@ subprojects {
 		useJUnitPlatform()
 		jvmArgs = listOf("-Xshare:off", "-javaagent:${mockitoAgent.asPath}")
 	}
-
-
 }

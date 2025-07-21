@@ -1,5 +1,5 @@
 rootProject.name = "Airline-EDA"
-include(":Flight-Service")
+include(":Flight-Service", ":Shared")
 pluginManagement {
     repositories {
         mavenCentral()

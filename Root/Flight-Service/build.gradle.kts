@@ -2,7 +2,6 @@ extra["springCloudVersion"] = "2025.0.0"
 
 dependencies {
 	implementation("org.springframework.cloud:spring-cloud-stream:4.3.0")
-	implementation("org.axonframework:axon-spring-boot-starter:4.11.2")
 	implementation("org.apache.kafka:kafka-streams:4.0.0")
 	implementation("org.springframework.cloud:spring-cloud-stream-binder-kafka-streams:4.3.0")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")

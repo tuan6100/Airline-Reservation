@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Airline-EDA.iml" filepath="$PROJECT_DIR$/.idea/Airline-EDA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Flight-Service/Airline-EDA.Flight-Service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Flight-Service/Airline-EDA.Flight-Service.main.iml" />
     </modules>
   </component>
 </project>

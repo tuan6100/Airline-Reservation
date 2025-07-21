@@ -10,6 +10,17 @@
           <set>
             <option value="$PROJECT_DIR$/Root" />
             <option value="$PROJECT_DIR$/Root/Flight-Service" />
+            <option value="$PROJECT_DIR$/Root/Shared" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Root/Shared" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Root" />
+            <option value="$PROJECT_DIR$/Root/Flight-Service" />
+            <option value="$PROJECT_DIR$/Root/Shared" />
           </set>
         </option>
       </GradleProjectSettings>

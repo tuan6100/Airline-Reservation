@@ -30,6 +30,7 @@ dependencies {
     implementation("org.springframework.cloud:spring-cloud-stream-binder-kafka-streams")
     implementation("org.axonframework:axon-spring-boot-starter:4.11.2")
     implementation("org.springframework.retry:spring-retry:2.0.12")
+    implementation("org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j:3.3.0")
     implementation("org.springframework:spring-aop")
     implementation("me.paulschwarz:spring-dotenv:4.0.0")
     implementation("com.fasterxml.uuid:java-uuid-generator:5.1.0")

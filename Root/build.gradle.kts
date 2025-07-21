@@ -29,21 +29,28 @@ subprojects {
 		}
 	}
 
+	val mockitoAgent = configurations.create("mockitoAgent")
+
 	dependencies {
 		add("implementation", "org.springframework.boot:spring-boot-starter-web")
 		add("implementation", "org.springframework.boot:spring-boot-starter-actuator")
 		add("implementation", "org.springframework.boot:spring-boot-starter-data-jpa")
 		add("implementation", "org.springframework:spring-aop")
-		add("implementation", "me.paulschwarz:spring-dotenv")
-		add("implementation", "com.fasterxml.uuid:java-uuid-generator")
+		add("implementation", "me.paulschwarz:spring-dotenv:4.0.0")
+		add("implementation", "com.fasterxml.uuid:java-uuid-generator:5.1.0")
+		add("implementation", "org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.9")
 		add("compileOnly", "org.projectlombok:lombok")
 		add("annotationProcessor", "org.projectlombok:lombok")
 		add("testImplementation", "org.springframework.boot:spring-boot-starter-test")
 		add("runtimeOnly", "org.postgresql:postgresql")
 		add("testRuntimeOnly", "org.junit.platform:junit-platform-launcher")
-	}
+		add("mockitoAgent", "org.mockito:mockito-core") { isTransitive = false }
+    }
 
 	tasks.withType<Test> {
 		useJUnitPlatform()
+		jvmArgs = listOf("-Xshare:off", "-javaagent:${mockitoAgent.asPath}")
 	}
+
+
 }

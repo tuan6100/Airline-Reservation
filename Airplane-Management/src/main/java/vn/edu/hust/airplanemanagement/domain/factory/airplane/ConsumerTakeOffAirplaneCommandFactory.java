@@ -1,6 +1,6 @@
-package vn.edu.hust.airplanemanagement.domain.factory;
+package vn.edu.hust.airplanemanagement.domain.factory.airplane;
 
-import vn.edu.hust.airplanemanagement.domain.factory.eventproduct.AirplaneTakenOffEventProduct;
+import vn.edu.hust.airplanemanagement.domain.factory.airplane.eventproduct.AirplaneTakenOffEventProduct;
 import vn.edu.hust.airplanemanagement.domain.message.command.airplane.TakeOffAirplaneCommand;
 import vn.edu.hust.airplanemanagement.domain.message.event.airplane.AirplaneTakenOffEvent;
 
@@ -14,7 +14,7 @@ implements AirplaneTakenOffEventProduct {
     }
 
     @Override
-    public AirplaneTakenOffEvent raiseNewAirplaneTakenOffEvent() {
+    public AirplaneTakenOffEvent createNewAirplaneTakenOffEvent() {
         // TODO: Domain rules for accepting the entrypoint command
         return null;
     }

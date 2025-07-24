@@ -1,8 +1,8 @@
-package vn.edu.hust.airplanemanagement.domain.factory.eventproduct;
+package vn.edu.hust.airplanemanagement.domain.factory.airplane.eventproduct;
 
 import vn.edu.hust.airplanemanagement.domain.message.event.airplane.AirplaneRegisteredEvent;
 
 public interface AirplaneRegisteredEventProduct {
 
-    AirplaneRegisteredEvent raiseNewAirplaneRegisteredEvent();
+    AirplaneRegisteredEvent createNewAirplaneRegisteredEvent();
 }

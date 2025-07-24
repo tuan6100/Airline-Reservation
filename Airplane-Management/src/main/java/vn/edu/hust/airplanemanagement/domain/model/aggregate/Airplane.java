@@ -1,5 +1,6 @@
 package vn.edu.hust.airplanemanagement.domain.model.aggregate;
 
+import jakarta.annotation.PostConstruct;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import org.axonframework.commandhandling.CommandHandler;
@@ -8,6 +9,7 @@ import org.axonframework.modelling.command.AggregateIdentifier;
 import org.axonframework.modelling.command.AggregateLifecycle;
 import org.axonframework.modelling.command.AggregateMember;
 import org.axonframework.spring.stereotype.Aggregate;
+import org.springframework.beans.factory.annotation.Autowired;
 import vn.edu.hust.airplanemanagement.domain.factory.FactoryHelper;
 import vn.edu.hust.airplanemanagement.domain.message.command.airplane.AddSeatToAirplaneCommand;
 import vn.edu.hust.airplanemanagement.domain.message.command.airplane.AssignAirplaneToFlightCommand;
@@ -21,8 +23,11 @@ import vn.edu.hust.airplanemanagement.domain.model.enumeration.AirplaneState;
 import vn.edu.hust.airplanemanagement.domain.model.valueobj.Airline;
 import vn.edu.hust.airplanemanagement.domain.model.valueobj.Flight;
 import vn.edu.hust.airplanemanagement.domain.model.valueobj.id.AirplaneId;
+import vn.edu.hust.airplanemanagement.domain.utility.IFieldExtractor;
 
 import java.util.Map;
+import java.util.concurrent.ConcurrentMap;
+import java.util.stream.Collectors;
 
 @Aggregate
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
@@ -43,11 +48,23 @@ public class Airplane {
     @AggregateMember
     private Map<String, Attendant> attendants;
 
+    @Autowired
+    private transient IFieldExtractor fieldExtractor;
+    private transient ConcurrentMap<String, Boolean> semanticLock;
+
+    @PostConstruct
+    public void initSemanticLock() {
+        semanticLock = semanticLock = fieldExtractor.extract(this.getClass()).stream()
+                .collect(Collectors.toConcurrentMap(
+                        fieldName -> fieldName,
+                        fieldName -> false
+                ));
+    }
 
     @CommandHandler
     public Airplane(RegisterNewAirplaneCommand command) {
         var factory = FactoryHelper.getFactoryFromCommand(command);
-        var event = factory.raiseNewAirplaneRegisteredEvent();
+        var event = factory.createNewAirplaneRegisteredEvent();
         AggregateLifecycle.apply(event);
     }
 
@@ -75,7 +92,7 @@ public class Airplane {
     @CommandHandler
     public void handle(AssignAirplaneToFlightCommand command) {
         var factory = FactoryHelper.getFactoryFromCommand(command);
-        var event = factory.raiseNewAirplaneAssignedToFlightEvent();
+        var event = factory.createNewAirplaneAssignedToFlightEvent();
         AggregateLifecycle.apply(event);
     }
 

@@ -1,11 +1,17 @@
 package vn.edu.hust.airplanemanagement.domain.factory;
 
+import vn.edu.hust.airplanemanagement.domain.factory.airplane.ConsumerAssignAirplaneToFlightCommandFactory;
+import vn.edu.hust.airplanemanagement.domain.factory.airplane.ConsumerRegisterNewAirplaneCommandFactory;
+import vn.edu.hust.airplanemanagement.domain.factory.airplane.ConsumerTakeOffAirplaneCommandFactory;
+import vn.edu.hust.airplanemanagement.domain.factory.seat.ConsumerRegisterNewSeatCommand;
 import vn.edu.hust.airplanemanagement.domain.message.command.airplane.*;
+import vn.edu.hust.airplanemanagement.domain.message.command.seat.RegisterNewSeatCommand;
 
 
 public final class FactoryHelper {
 
     private FactoryHelper() {}
+
 
     public static ConsumerRegisterNewAirplaneCommandFactory
     getFactoryFromCommand(RegisterNewAirplaneCommand command) {
@@ -20,5 +26,10 @@ public final class FactoryHelper {
     public static ConsumerTakeOffAirplaneCommandFactory
             getFactoryFromCommand(TakeOffAirplaneCommand command) {
         return new ConsumerTakeOffAirplaneCommandFactory(command);
+    }
+
+    public static ConsumerRegisterNewSeatCommand
+            getFactoryFromCommand(RegisterNewSeatCommand command) {
+        return new ConsumerRegisterNewSeatCommand(command);
     }
 }

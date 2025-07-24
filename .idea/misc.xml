@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/Airplane-Management" />
-    <file type="web" url="file://$PROJECT_DIR$/Booking-Management" />
-    <file type="web" url="file://$PROJECT_DIR$/Flight-Management" />
+    <file type="web" url="file://$PROJECT_DIR$" />
   </component>
-  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.24.1" />
   <component name="KotlinNotebookOptionsProvider">
     <option name="jdkName" value="24" />
   </component>
@@ -53,7 +50,5 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="24" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
-  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_24" default="true" project-jdk-name="24" project-jdk-type="JavaSDK" />
 </project>

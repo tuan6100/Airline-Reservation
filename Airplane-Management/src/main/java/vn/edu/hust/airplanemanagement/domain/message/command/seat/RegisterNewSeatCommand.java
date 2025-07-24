@@ -9,10 +9,12 @@ public record RegisterNewSeatCommand(
         @TargetAggregateIdentifier
         UUID seatId,
         String seatNumber,
-        String seatClassId
+        String seatClassId,
+        String airplaneId
 ) {
-        public RegisterNewSeatCommand(String seatNumber, String seatClassId) {
+        public RegisterNewSeatCommand(String seatNumber, String seatClassId,
+                                      String airplaneId) {
                 var seatId = Generators.timeBasedEpochGenerator().generate();
-                this(seatId, seatNumber, seatClassId);
+                this(seatId, seatNumber, seatClassId, airplaneId);
         }
 }

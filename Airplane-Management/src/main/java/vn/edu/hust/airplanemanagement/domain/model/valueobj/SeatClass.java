@@ -1,12 +1,16 @@
 package vn.edu.hust.airplanemanagement.domain.model.valueobj;
 
-import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-@Getter(AccessLevel.PACKAGE)
-@AllArgsConstructor(access = AccessLevel.PACKAGE)
+@Getter
+@AllArgsConstructor
 public class SeatClass {
 
     private String seatClassId;
+    private long price;
+
+    public SeatClass(String seatClassId) {
+        this.seatClassId = seatClassId;
+    }
 }

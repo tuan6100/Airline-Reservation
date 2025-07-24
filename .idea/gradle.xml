@@ -4,26 +4,14 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Airplane-Management" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Airline-Management" />
             <option value="$PROJECT_DIR$/Airplane-Management" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Booking-Management" />
-        <option name="gradleJvm" value="24" />
-        <option name="modules">
-          <set>
             <option value="$PROJECT_DIR$/Booking-Management" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Flight-Management" />
-        <option name="modules">
-          <set>
+            <option value="$PROJECT_DIR$/Common" />
             <option value="$PROJECT_DIR$/Flight-Management" />
           </set>
         </option>

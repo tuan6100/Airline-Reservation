@@ -2,8 +2,7 @@ package vn.edu.hust.airplanemanagement.domain.model.enumeration;
 
 public enum SeatState {
 
-    AVAILABLE,
-    UNAVAILABLE,
+    EMPTY,
     ON_HOLD,
     RESERVED
 }

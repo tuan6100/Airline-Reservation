@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Airline-EDA.iml" filepath="$PROJECT_DIR$/Airline-EDA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Airline-Management/Airline-Management.iml" filepath="$PROJECT_DIR$/Airline-Management/Airline-Management.iml" />
     </modules>
   </component>
 </project>

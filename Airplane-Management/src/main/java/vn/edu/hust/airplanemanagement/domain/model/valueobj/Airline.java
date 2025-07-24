@@ -1,12 +1,16 @@
 package vn.edu.hust.airplanemanagement.domain.model.valueobj;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.Setter;
 
-@Getter(AccessLevel.PACKAGE)
-@AllArgsConstructor(access = AccessLevel.PACKAGE)
+@Getter
+@Setter
 public class Airline {
 
-    private String airlineId;
+    private final String airlineId;
+    private int maxSeatReservingAllowed;
+
+    public Airline(String airlineId) {
+        this.airlineId = airlineId;
+    }
 }

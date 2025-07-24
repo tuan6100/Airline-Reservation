@@ -1,12 +1,17 @@
 package vn.edu.hust.airplanemanagement.domain.model.valueobj;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.Setter;
 
-@Getter(AccessLevel.PACKAGE)
-@AllArgsConstructor(access = AccessLevel.PACKAGE)
+@Getter
+@Setter
 public class Passenger {
 
-    private String passengerId;
+    private final String passengerId;
+    private int age;
+    private String nationId;
+
+    public Passenger(String passengerId) {
+        this.passengerId = passengerId;
+    }
 }

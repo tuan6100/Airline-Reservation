@@ -6,7 +6,7 @@ import java.util.UUID;
 
 public record HoldSeatCommand(
         @TargetAggregateIdentifier
-        UUID seatId,
+        String seatId,
         String customerId,
         String passengerId
 ) {

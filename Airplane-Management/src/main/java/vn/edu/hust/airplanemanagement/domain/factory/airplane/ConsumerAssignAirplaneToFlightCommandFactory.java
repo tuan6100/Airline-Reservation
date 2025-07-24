@@ -57,7 +57,6 @@ implements AirplaneAssignedToFlightProduct {
                         attendant -> attendant
                 ));
         return new AirplaneAssignedToFlightEvent(
-                airplane,
                 flight,
                 primaryPilot,
                 secondaryPilot,

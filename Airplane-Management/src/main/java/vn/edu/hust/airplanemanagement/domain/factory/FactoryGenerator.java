@@ -8,9 +8,9 @@ import vn.edu.hust.airplanemanagement.domain.message.command.airplane.*;
 import vn.edu.hust.airplanemanagement.domain.message.command.seat.RegisterNewSeatCommand;
 
 
-public final class FactoryHelper {
+public final class FactoryGenerator {
 
-    private FactoryHelper() {}
+    private FactoryGenerator() {}
 
 
     public static ConsumerRegisterNewAirplaneCommandFactory

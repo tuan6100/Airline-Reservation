@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="88cc4dab-b154-43ec-a558-926ec0106883" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Airplane-Management/src/main/java/vn/edu/hust/airplanemanagement/application/usecase/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Airplane-Management/src/main/java/vn/edu/hust/airplanemanagement/infrastructure/configuration/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Airplane-Management/src/main/java/vn/edu/hust/airplanemanagement/infrastructure/repository/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airline-Management/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airline-Management/src/main/java/vn/edu/hust/airlinemanagement/AirlineManagementApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airline-Management/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airline-Management/src/test/java/vn/edu/hust/airlinemanagement/AirlineManagementApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airplane-Management/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airplane-Management/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airplane-Management/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/Airplane-Management/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airplane-Management/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airplane-Management/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airplane-Management/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking-Management/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking-Management/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking-Management/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/Booking-Management/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking-Management/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Booking-Management/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking-Management/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking-Management/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking-Management/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking-Management/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Booking-Management/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flight-Management/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flight-Management/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flight-Management/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/Flight-Management/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flight-Management/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flight-Management/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flight-Management/settings.gradle.kts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Airline-EDA" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Script Gradle.gradle" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.24.1" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tuan6100&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/tuan6100/Airline-Reservation.git&quot;,
+    &quot;accountId&quot;: &quot;b1290644-7d57-4aaa-a398-86445dff1bdb&quot;
+  }
+}</component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="30J7Yz9V8emUdTv42R1no2UizxA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Download Sources.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "feature/airplane-domain/seat-as-aggregate",
+    "go.import.settings.migrated": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "D:/WORK/Programs/Java/Spring",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.AirplaneManagementApplication">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="kotlin.scripts.KotlinBuildScript.Flight-Management\build.gradle.kts" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="kotlin.scripts.KotlinBuildScript.Flight-Management\build.gradle.kts" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AirplaneManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Airline-EDA.Airplane-Management.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="vn.edu.hust.airplanemanagement.AirplaneManagementApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookingManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Airline-EDA.Booking-Management.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="vn.edu.hust.bookingmanagement.BookingManagementApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlightManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Airline-EDA.Flight-Management.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="vn.edu.hust.flightmanagement.FlightManagementApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpringInjectionOptions">
+    <option name="defaultBeanInjectionType" value="FIELD" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="88cc4dab-b154-43ec-a558-926ec0106883" name="Changes" comment="" />
+      <created>1747536015240</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747536015240</updated>
+      <workItem from="1747536095659" duration="43000" />
+      <workItem from="1753333875113" duration="98000" />
+      <workItem from="1753370073154" duration="599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

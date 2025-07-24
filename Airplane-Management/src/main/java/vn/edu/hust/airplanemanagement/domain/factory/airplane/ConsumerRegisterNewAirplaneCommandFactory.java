@@ -39,7 +39,7 @@ implements AirplaneRegisteredEventProduct {
                 airplane,
                 command.airplaneName(),
                 airline,
-                AirplaneState.MAINTENANCE
+                AirplaneState.INACTIVE
         );
     }
 }

@@ -3,8 +3,11 @@ package vn.edu.hust.airplanemanagement.domain.transaction;
 import lombok.extern.slf4j.Slf4j;
 import org.axonframework.commandhandling.distributed.CommandDispatchException;
 import org.axonframework.commandhandling.gateway.CommandGateway;
+import org.axonframework.modelling.saga.EndSaga;
 import org.axonframework.modelling.saga.SagaEventHandler;
 import org.axonframework.modelling.saga.SagaLifecycle;
+import org.axonframework.modelling.saga.StartSaga;
+import org.axonframework.modelling.saga.repository.LockingSagaRepository;
 import org.axonframework.spring.stereotype.Saga;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.retry.annotation.CircuitBreaker;
@@ -31,15 +34,18 @@ public class AirplaneCreationSaga {
             resetTimeout = 5000L,
             recover = "handle"
     )
+    @StartSaga
     @SagaEventHandler(associationProperty = "seatId")
     public void handle(SeatRegisteredEvent event) {
         SagaLifecycle.associateWith("airplane", event.airplaneId());
         commandGateway.sendAndWait(new AddSeatToAirplaneCommand(
                 event.airplaneId()),
                 2000L,
-                TimeUnit.MILLISECONDS);
+                TimeUnit.MILLISECONDS
+        );
     }
 
+    @EndSaga
     @SagaEventHandler(associationProperty = "airplaneId")
     public void handle(SeatAddedToAirplaneEvent event) {
         SagaLifecycle.end();

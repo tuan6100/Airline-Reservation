@@ -8,7 +8,6 @@ import vn.edu.hust.airplanemanagement.domain.model.valueobj.id.AirplaneId;
 import java.util.Map;
 
 public record AirplaneAssignedToFlightEvent (
-        AirplaneId airplaneId,
         Flight flight,
         Pilot primaryPilot,
         Pilot secondaryPilot,

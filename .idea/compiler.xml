@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="E:/Dependency/Java/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.38/57f8f5e02e92a30fd21b80cbd426a4172b5f8e29/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="Airline-EDA.Airplane-Management.main" />
+        <module name="Airline-EDA.Booking-Management.main" />
+        <module name="Airline-EDA.Airline-Management.main" />
+        <module name="Airline-EDA.Flight-Management.main" />
+        <module name="Airline-EDA.Common.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="24" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Airline-EDA.Airline-Management" options="-parameters" />
+      <module name="Airline-EDA.Airline-Management.main" options="-parameters" />
+      <module name="Airline-EDA.Airline-Management.test" options="-parameters" />
+      <module name="Airline-EDA.Airplane-Management" options="-parameters" />
+      <module name="Airline-EDA.Airplane-Management.main" options="-parameters" />
+      <module name="Airline-EDA.Airplane-Management.test" options="-parameters" />
+      <module name="Airline-EDA.Booking-Management" options="-parameters" />
+      <module name="Airline-EDA.Booking-Management.main" options="-parameters" />
+      <module name="Airline-EDA.Booking-Management.test" options="-parameters" />
+      <module name="Airline-EDA.Common" options="-parameters" />
+      <module name="Airline-EDA.Common.main" options="-parameters" />
+      <module name="Airline-EDA.Common.test" options="-parameters" />
+      <module name="Airline-EDA.Flight-Management" options="-parameters" />
+      <module name="Airline-EDA.Flight-Management.main" options="-parameters" />
+      <module name="Airline-EDA.Flight-Management.test" options="-parameters" />
+    </option>
+  </component>
+</project>

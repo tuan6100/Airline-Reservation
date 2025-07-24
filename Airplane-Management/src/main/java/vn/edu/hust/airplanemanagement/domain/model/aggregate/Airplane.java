@@ -1,21 +1,22 @@
 package vn.edu.hust.airplanemanagement.domain.model.aggregate;
 
-import jakarta.annotation.PostConstruct;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
+import org.axonframework.messaging.MetaData;
 import org.axonframework.modelling.command.AggregateIdentifier;
 import org.axonframework.modelling.command.AggregateLifecycle;
 import org.axonframework.modelling.command.AggregateMember;
 import org.axonframework.spring.stereotype.Aggregate;
-import org.springframework.beans.factory.annotation.Autowired;
-import vn.edu.hust.airplanemanagement.domain.factory.FactoryHelper;
+import vn.edu.hust.airplanemanagement.domain.factory.FactoryGenerator;
 import vn.edu.hust.airplanemanagement.domain.message.command.airplane.AddSeatToAirplaneCommand;
 import vn.edu.hust.airplanemanagement.domain.message.command.airplane.AssignAirplaneToFlightCommand;
+import vn.edu.hust.airplanemanagement.domain.message.command.airplane.MakeAReservationCommand;
 import vn.edu.hust.airplanemanagement.domain.message.command.airplane.RegisterNewAirplaneCommand;
-import vn.edu.hust.airplanemanagement.domain.message.command.seat.RegisterNewSeatCommand;
+import vn.edu.hust.airplanemanagement.domain.message.event.airplane.AirplaneAssignedToFlightEvent;
 import vn.edu.hust.airplanemanagement.domain.message.event.airplane.AirplaneRegisteredEvent;
+import vn.edu.hust.airplanemanagement.domain.message.event.airplane.NumberEmptySeatDecreasedEvent;
 import vn.edu.hust.airplanemanagement.domain.message.event.airplane.SeatAddedToAirplaneEvent;
 import vn.edu.hust.airplanemanagement.domain.model.entity.Attendant;
 import vn.edu.hust.airplanemanagement.domain.model.entity.Pilot;
@@ -23,11 +24,8 @@ import vn.edu.hust.airplanemanagement.domain.model.enumeration.AirplaneState;
 import vn.edu.hust.airplanemanagement.domain.model.valueobj.Airline;
 import vn.edu.hust.airplanemanagement.domain.model.valueobj.Flight;
 import vn.edu.hust.airplanemanagement.domain.model.valueobj.id.AirplaneId;
-import vn.edu.hust.airplanemanagement.domain.utility.IFieldExtractor;
 
 import java.util.Map;
-import java.util.concurrent.ConcurrentMap;
-import java.util.stream.Collectors;
 
 @Aggregate
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
@@ -48,22 +46,9 @@ public class Airplane {
     @AggregateMember
     private Map<String, Attendant> attendants;
 
-    @Autowired
-    private transient IFieldExtractor fieldExtractor;
-    private transient ConcurrentMap<String, Boolean> semanticLock;
-
-    @PostConstruct
-    public void initSemanticLock() {
-        semanticLock = semanticLock = fieldExtractor.extract(this.getClass()).stream()
-                .collect(Collectors.toConcurrentMap(
-                        fieldName -> fieldName,
-                        fieldName -> false
-                ));
-    }
-
     @CommandHandler
     public Airplane(RegisterNewAirplaneCommand command) {
-        var factory = FactoryHelper.getFactoryFromCommand(command);
+        var factory = FactoryGenerator.getFactoryFromCommand(command);
         var event = factory.createNewAirplaneRegisteredEvent();
         AggregateLifecycle.apply(event);
     }
@@ -91,14 +76,35 @@ public class Airplane {
 
     @CommandHandler
     public void handle(AssignAirplaneToFlightCommand command) {
-        var factory = FactoryHelper.getFactoryFromCommand(command);
+        var factory = FactoryGenerator.getFactoryFromCommand(command);
         var event = factory.createNewAirplaneAssignedToFlightEvent();
         AggregateLifecycle.apply(event);
     }
 
-    @CommandHandler
-    public void handle(RegisterNewSeatCommand command) {
+    @EventSourcingHandler
+    public void on(AirplaneAssignedToFlightEvent event) {
 
+    }
+
+    @CommandHandler
+    public void handle(MakeAReservationCommand command) {
+        if (!this.state.equals(AirplaneState.SCHEDULED)) {
+            throw new IllegalStateException(
+                    "Airplane" + this.airplaneAggregateId + " is not available for reserving");
+        }
+        AggregateLifecycle.apply(new NumberEmptySeatDecreasedEvent(
+                command.airplaneId(),
+                command.seatId(),
+                this.numberEmptySeat - 1
+        ), MetaData.from(Map.of(
+                "customer.id", command.customerId(),
+                "passenger.id", command.passengerId()
+        )));
+    }
+
+    @EventSourcingHandler
+    void on(NumberEmptySeatDecreasedEvent event) {
+        this.numberEmptySeat = numberEmptySeat;
     }
 
 

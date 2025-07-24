@@ -28,16 +28,7 @@ spring:
     stream:
       default-binder: kstream
 
-#logging:
-#  level:
-#    org.hibernate.SQL: DEBUG
-#    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
-#    org.hibernate.orm.jdbc.bind: trace
+  config:
+    import: classpath:application.yaml
 
-#springdoc:
-#  api-docs:
-#    enabled: true
-#    path: /api-docs
-#  swagger-ui:
-#    path: /swagger-ui.html
-#    operationsSorter: method
+

@@ -6,7 +6,6 @@ import vn.edu.hust.airplanemanagement.domain.model.valueobj.id.SeatId;
 public record SeatHeldEvent(
         SeatId seatId,
         SeatState state,
-        String customerId,
         String passengerId
 ) {
 }

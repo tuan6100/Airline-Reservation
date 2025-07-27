@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.axonframework:axon-spring-boot-starter:4.11.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.axonframework" artifactId="axon-spring-boot-starter" version="4.11.2" baseVersion="4.11.2" />
+    <CLASSES>
+      <root url="jar://E:/Dependency/Java/.gradle/caches/modules-2/files-2.1/org.axonframework/axon-spring-boot-starter/4.11.2/a3417dea8d4b47ec7b6f95afed7667d1d7729df1/axon-spring-boot-starter-4.11.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

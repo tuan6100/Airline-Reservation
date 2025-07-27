@@ -8,11 +8,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Airline-Management" />
-            <option value="$PROJECT_DIR$/Airplane-Management" />
-            <option value="$PROJECT_DIR$/Booking-Management" />
+            <option value="$PROJECT_DIR$/Airline-Context" />
+            <option value="$PROJECT_DIR$/Airplane-Context" />
+            <option value="$PROJECT_DIR$/Booking-Context" />
             <option value="$PROJECT_DIR$/Common" />
-            <option value="$PROJECT_DIR$/Flight-Management" />
+            <option value="$PROJECT_DIR$/Flight-Context" />
           </set>
         </option>
       </GradleProjectSettings>

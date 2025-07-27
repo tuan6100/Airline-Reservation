@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Airline-Management/Airline-Management.iml" filepath="$PROJECT_DIR$/Airline-Management/Airline-Management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Airline-EDA.iml" filepath="$PROJECT_DIR$/.idea/modules/Airline-EDA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Airline-Context/Airline-EDA.Airline-Context.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Airline-Context/Airline-EDA.Airline-Context.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Airline-Context/Airline-EDA.Airline-Context.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Airline-Context/Airline-EDA.Airline-Context.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Airplane-Context/Airline-EDA.Airplane-Context.iml" filepath="$PROJECT_DIR$/.idea/modules/Airplane-Context/Airline-EDA.Airplane-Context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Airplane-Context/Airline-EDA.Airplane-Context.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Airplane-Context/Airline-EDA.Airplane-Context.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Airplane-Context/Airline-EDA.Airplane-Context.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Airplane-Context/Airline-EDA.Airplane-Context.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Booking-Management/Airline-EDA.Booking-Management.iml" filepath="$PROJECT_DIR$/.idea/modules/Booking-Management/Airline-EDA.Booking-Management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Booking-Management/Airline-EDA.Booking-Management.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Booking-Management/Airline-EDA.Booking-Management.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Booking-Management/Airline-EDA.Booking-Management.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Booking-Management/Airline-EDA.Booking-Management.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Common/Airline-EDA.Common.iml" filepath="$PROJECT_DIR$/.idea/modules/Common/Airline-EDA.Common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Common/Airline-EDA.Common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Common/Airline-EDA.Common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Common/Airline-EDA.Common.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Common/Airline-EDA.Common.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Flight-Management/Airline-EDA.Flight-Management.iml" filepath="$PROJECT_DIR$/.idea/modules/Flight-Management/Airline-EDA.Flight-Management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Flight-Management/Airline-EDA.Flight-Management.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Flight-Management/Airline-EDA.Flight-Management.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Flight-Management/Airline-EDA.Flight-Management.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Flight-Management/Airline-EDA.Flight-Management.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Airline-Context/vn.edu.hust.Airline-EDA.Airline-Context.iml" filepath="$PROJECT_DIR$/.idea/modules/Airline-Context/vn.edu.hust.Airline-EDA.Airline-Context.iml" />
     </modules>
   </component>
 </project>

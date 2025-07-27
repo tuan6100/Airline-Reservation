@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: Common
+
+  config:
+    name: application-common
+
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.orm.jdbc.bind: trace
+
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+
+
+axon:
+  axonserver:
+    default-flow-control-configuration:
+      new-permits-threshold: 100
+    command-threads: 100
+    connection-management-thread-pool-size: 10

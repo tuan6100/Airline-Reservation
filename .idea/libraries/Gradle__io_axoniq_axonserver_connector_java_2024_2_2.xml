@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: io.axoniq:axonserver-connector-java:2024.2.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="io.axoniq" artifactId="axonserver-connector-java" version="2024.2.2" baseVersion="2024.2.2" />
+    <CLASSES>
+      <root url="jar://E:/Dependency/Java/.gradle/caches/modules-2/files-2.1/io.axoniq/axonserver-connector-java/2024.2.2/6003a92f10544dcadd25643c89919bf550930741/axonserver-connector-java-2024.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.axonframework:axon-server-connector:4.11.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.axonframework" artifactId="axon-server-connector" version="4.11.2" baseVersion="4.11.2" />
+    <CLASSES>
+      <root url="jar://E:/Dependency/Java/.gradle/caches/modules-2/files-2.1/org.axonframework/axon-server-connector/4.11.2/2411d515b0a1ffc8e694db4331c2d19aca78817e/axon-server-connector-4.11.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Dependency/Java/.gradle/caches/modules-2/files-2.1/org.axonframework/axon-server-connector/4.11.2/83d7b2e46db525a5199087001aa87fb790248128/axon-server-connector-4.11.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

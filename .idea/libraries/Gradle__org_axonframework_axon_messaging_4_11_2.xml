@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.axonframework:axon-messaging:4.11.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.axonframework" artifactId="axon-messaging" version="4.11.2" baseVersion="4.11.2" />
+    <CLASSES>
+      <root url="jar://E:/Dependency/Java/.gradle/caches/modules-2/files-2.1/org.axonframework/axon-messaging/4.11.2/b26fd27253b40d0e3cd7390e4432ae109ef088d1/axon-messaging-4.11.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Dependency/Java/.gradle/caches/modules-2/files-2.1/org.axonframework/axon-messaging/4.11.2/f8f23557ee8dd485e41337b5b7667604e6defe11/axon-messaging-4.11.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,9 +1,9 @@
 rootProject.name = "Airline-EDA"
 include(":Common",
-    ":Airline-Management",
-    ":Airplane-Management",
-    ":Flight-Management",
-    ":Booking-Management")
+    ":Airline-Context",
+    ":Airplane-Context",
+    ":Flight-Context",
+    ":Booking-Context")
 pluginManagement {
     repositories {
         mavenCentral()

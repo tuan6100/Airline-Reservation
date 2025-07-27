@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/Airplane-Management/src/main/java/vn/edu/hust/airplanemanagement/domain/utility/UUIDGenerator.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/Airplane-Management/src/main/java/vn/edu/hust/airplanemanagement/domain/utility/UUIDGenerator.java" />
+              <option name="originalContent" value="package vn.edu.hust.airplanemanagement.domain.utility;&#10;&#10;import java.util.UUID;&#10;import com.fasterxml.uuid.Generators;&#10;import org.springframework.lang.NonNull;&#10;import org.springframework.lang.Nullable;&#10;&#10;public final class UUIDGenerator {&#10;&#10;    private UUIDGenerator() {}&#10;&#10;    public static UUID generate(@NonNull int version, @Nullable String data) {&#10;        return switch (version) {&#10;            case 1 -&gt; Generators.timeBasedGenerator().generate();&#10;            case 2 -&gt;&#10;            case 3, 5 -&gt; Generators.nameBasedGenerator().generate(data);&#10;            case 4 -&gt; Generators.randomBasedGenerator().generate();&#10;            case 6 -&gt; Generators.timeBasedReorderedGenerator().generate();&#10;            case 7 -&gt; Generators.timeBasedEpochRandomGenerator().generate();&#10;            case 8 -&gt;&#10;            default -&gt; throw new IllegalStateException(&quot;Unexpected version: &quot; + version);&#10;        };&#10;    }&#10;}&#10;" />
+              <option name="updatedContent" value="package vn.edu.hust.airplanemanagement.domain.utility;&#10;&#10;import java.util.UUID;&#10;import com.fasterxml.uuid.Generators;&#10;import org.springframework.lang.NonNull;&#10;import org.springframework.lang.Nullable;&#10;&#10;public final class UUIDGenerator {&#10;&#10;    private UUIDGenerator() {}&#10;&#10;    public static UUID generate(@NonNull int version, @Nullable String data) {&#10;        return switch (version) {&#10;            case 1 -&gt; Generators.timeBasedGenerator().generate();&#10;            case 2 -&gt; generateV2();&#10;            case 3, 5 -&gt; Generators.nameBasedGenerator().generate(data);&#10;            case 4 -&gt; Generators.randomBasedGenerator().generate();&#10;            case 6 -&gt; Generators.timeBasedReorderedGenerator().generate();&#10;            case 7 -&gt; Generators.timeBasedEpochRandomGenerator().generate();&#10;            case 8 -&gt; generateV8();&#10;            default -&gt; throw new IllegalStateException(&quot;Unexpected version: &quot; + version);&#10;        };&#10;    }&#10;&#10;    /**&#10;     * Simulates UUID v2 (DCE Security). Not natively supported in Java.&#10;     * This implementation generates a time-based UUID and sets the version bits to 2.&#10;     */&#10;    public static UUID generateV2() {&#10;        UUID uuid = Generators.timeBasedGenerator().generate();&#10;        long msb = (uuid.getMostSignificantBits() &amp; ~(0xF000L &lt;&lt; 48)) | (2L &lt;&lt; 76);&#10;        return new UUID(msb, uuid.getLeastSignificantBits());&#10;    }&#10;&#10;    /**&#10;     * Simulates UUID v8 (Custom). Generates a random UUID and sets the version bits to 8.&#10;     */&#10;    public static UUID generateV8() {&#10;        UUID uuid = Generators.randomBasedGenerator().generate();&#10;        long msb = (uuid.getMostSignificantBits() &amp; ~(0xF000L &lt;&lt; 48)) | (8L &lt;&lt; 76);&#10;        return new UUID(msb, uuid.getLeastSignificantBits());&#10;    }&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

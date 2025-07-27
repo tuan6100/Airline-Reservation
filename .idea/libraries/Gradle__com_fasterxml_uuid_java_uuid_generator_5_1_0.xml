@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.fasterxml.uuid:java-uuid-generator:5.1.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.fasterxml.uuid" artifactId="java-uuid-generator" version="5.1.0" baseVersion="5.1.0" />
+    <CLASSES>
+      <root url="jar://E:/Dependency/Java/.gradle/caches/modules-2/files-2.1/com.fasterxml.uuid/java-uuid-generator/5.1.0/c854cf1358e611d4a566170e4fa0d99606c28ec8/java-uuid-generator-5.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Dependency/Java/.gradle/caches/modules-2/files-2.1/com.fasterxml.uuid/java-uuid-generator/5.1.0/8b4f5b9a85c530ade8faf3d6662db31bf430fcd6/java-uuid-generator-5.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
